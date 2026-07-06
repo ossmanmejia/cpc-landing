@@ -1,37 +1,54 @@
-# Landing page - Comunicación Pública de la Ciencia
+# Landing page CPC - Catálogo de cursos
 
 Proyecto web estático listo para abrir en VSCode y desplegar en Netlify.
 
 ## Estructura
 
-- `index.html`: estructura principal de la landing page.
-- `css/styles.css`: estilos visuales y diseño responsive.
-- `js/courses.js`: datos de los 12 cursos tomados de la hoja `Matriz cursos _Micrositio`.
-- `js/app.js`: renderizado de tarjetas, filtros por área y enlace de preinscripción.
-- `assets/img/`: carpeta para banner e imágenes.
-- `assets/logos/`: carpeta para logos institucionales.
+```txt
+.
+├── index.html
+├── netlify.toml
+├── css/
+│   └── styles.css
+├── js/
+│   ├── app.js
+│   └── courses.js
+└── assets/
+    ├── img/
+    └── logos/
+```
 
-## Cómo probar en VSCode
+## Cómo verlo localmente
 
-1. Abre la carpeta `cpc_landing_netlify` en VSCode.
-2. Instala la extensión **Live Server** si no la tienes.
-3. Clic derecho sobre `index.html` y selecciona **Open with Live Server**.
+Abre la carpeta en VSCode y usa la extensión **Live Server** sobre `index.html`.
 
-También puedes abrir `index.html` directamente en el navegador.
+## Ajustes principales de esta versión
 
-## Qué debes reemplazar después
+- Se eliminó el banner principal.
+- Se creó un hero moderno integrado al contenido.
+- Paleta basada en `#FFE5D2` y `#98BCA5`.
+- Títulos en Arial Black y textos en Arial.
+- Sección “¿Cómo acceder?” con tres pasos.
+- Catálogo de 8 cursos desde `js/courses.js`.
+- CTA final con enlace externo a la plataforma de formación EAFIT.
+- Footer con marcadores para logos institucionales.
 
-1. Banner principal: guarda la imagen oficial como `assets/img/banner.jpg`.
-2. Introducción: reemplaza el texto de la sección `Presentación` en `index.html`.
-3. Disclaimer: reemplaza el texto de la sección `Información importante` en `index.html`.
-4. Formulario: cambia la constante `PREINSCRIPTION_URL` en `js/app.js`.
-5. Logos: reemplaza los placeholders del footer por imágenes reales en `index.html`.
+## Enlace de registro
+
+```txt
+https://formacion.eafit.edu.co/cursos/4
+```
+
+## Pendientes por reemplazar
+
+- En la sección `#tutorial`, reemplazar el marcador por el video o enlace oficial.
+- En el footer, reemplazar los textos por logos reales cuando estén disponibles.
 
 ## Despliegue en Netlify
 
-Como es un sitio estático, no requiere build.
+Al conectar el repositorio en Netlify:
 
-- Build command: dejar vacío.
-- Publish directory: `/` si subes esta carpeta como raíz del sitio.
-
-Si subes el repositorio completo y la landing queda dentro de una subcarpeta, selecciona esa carpeta como directorio de publicación.
+```txt
+Build command: dejar vacío
+Publish directory: .
+```

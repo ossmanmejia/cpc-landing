@@ -1,18 +1,12 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Oferta formativa para docentes en el marco del proyecto Comunicación Pública de la Ciencia." />
-  <title>Comunicación Pública de la Ciencia | Oferta formativa para docentes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Catálogo de cursos virtuales para docentes de la Estrategia Pedagógica de Comunicación Pública de la Ciencia." />
+  <title>Comunicación Pública de la Ciencia | Catálogo de cursos</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Navegación principal">
@@ -21,105 +15,121 @@
         <span class="brand__text">Comunicación Pública de la Ciencia</span>
       </a>
       <div class="nav__links">
-        <a href="#oferta">Cursos</a>
-        <a href="https://formacion.eafit.edu.co/cursos/4" target="_blank" rel="noopener noreferrer">Registrate aquí</a>
+        <a href="#acceso">¿Cómo acceder?</a>
+        <a href="#cursos">Cursos</a>
+        <a class="nav__button" href="https://formacion.eafit.edu.co/cursos/4" target="_blank" rel="noopener noreferrer">Crear cuenta</a>
       </div>
     </nav>
   </header>
 
   <main id="inicio">
-    <section class="hero">
+    <section class="hero section-pad">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow">Oferta formativa para docentes</p>
+          <p class="eyebrow">Estrategia Pedagógica</p>
           <h1>Comunicación Pública de la Ciencia</h1>
-          <p class="hero__lead">Micrositio temporal para presentar la oferta de cursos virtuales del proyecto. Reemplaza
-            este texto cuando esté aprobada la introducción oficial.</p>
+          <span class="title-line" aria-hidden="true"></span>
+          <h2>Fortalece tus conocimientos con nuestro catálogo de cursos</h2>
+          <p>Como parte de la Estrategia Pedagógica de Comunicación Pública de la Ciencia, la Secretaría de Educación del Distrito y la Universidad EAFIT ponen a tu disposición un catálogo de cursos virtuales diseñado para fortalecer y complementar tus conocimientos en temas clave relacionados con esta estrategia.</p>
+          <p>En este espacio podrás consultar la oferta de los 8 cursos y realizar aquellos que mejor respondan a tus intereses y necesidades de formación.</p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#oferta">Ver cursos</a>
-            <a class="btn btn--ghost" href="https://formacion.eafit.edu.co/cursos/4" target="_blank"
-              rel="noopener noreferrer">Registrate aquí</a>
+            <a class="btn btn--primary" href="https://formacion.eafit.edu.co/cursos/4" target="_blank" rel="noopener noreferrer">Crea tu cuenta aquí</a>
+            <a class="btn btn--secondary" href="#cursos">Ver cursos</a>
           </div>
         </div>
-        <div class="hero__banner" role="img" aria-label="Espacio reservado para banner principal">
-          <div>
-            <span>Banner principal</span>
-            <small>Reemplazar por imagen oficial en assets/img/banner.jpg</small>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="stamp">Ciencia<br>para<br>contar</div>
+          <div class="machine-card">
+            <div class="machine-card__dots"></div>
+            <div class="machine-card__body">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
           </div>
+          <div class="leaf leaf--one"></div>
+          <div class="leaf leaf--two"></div>
         </div>
       </div>
     </section>
 
-    <section class="section section--intro">
-      <div class="container narrow">
-        <p class="section__label">Presentación</p>
-        <h2>Una ruta de formación para fortalecer capacidades docentes</h2>
-        <p>Texto introductorio pendiente. Este espacio está pensado para explicar el propósito de la oferta formativa,
-          su relación con el proyecto Comunicación Pública de la Ciencia y la invitación a docentes interesados en
-          fortalecer sus prácticas, lenguajes y estrategias de comunicación.</p>
-        <p>También puede incluirse información sobre modalidad, duración general, criterios de participación, alcance de
-          los cursos y beneficios esperados para los participantes.</p>
+    <section class="access container" id="acceso" aria-labelledby="access-title">
+      <h2 id="access-title">¿Cómo acceder?</h2>
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-card__number">1</span>
+          <div class="step-card__icon">▣</div>
+          <h3>Crea tu cuenta</h3>
+          <p>Ingresa a la plataforma de formación de la Universidad EAFIT y crea tu cuenta antes del <strong>22 de julio de 2026</strong>.</p>
+          <a href="https://formacion.eafit.edu.co/cursos/4" target="_blank" rel="noopener noreferrer">Crear cuenta ↗</a>
+        </article>
+
+        <article class="step-card">
+          <span class="step-card__number">2</span>
+          <div class="step-card__icon">▷</div>
+          <h3>Consulta el tutorial</h3>
+          <p>Revisa el tutorial paso a paso para realizar tu registro en la plataforma de la Universidad EAFIT.</p>
+          <a href="#tutorial">Ver tutorial</a>
+        </article>
+
+        <article class="step-card">
+          <span class="step-card__number">3</span>
+          <div class="step-card__icon">✉</div>
+          <h3>Espera tu matrícula</h3>
+          <p>Durante la semana del <strong>27 de julio</strong>, EAFIT te matriculará en los cursos. Recibirás un correo cuando puedas ingresar y comenzar.</p>
+        </article>
+      </div>
+
+      <aside class="notice">
+        <div class="notice__icon">◷</div>
+        <p><strong>Ten presente:</strong> los cursos estarán disponibles para su desarrollo únicamente durante el mes de agosto, por lo que te invitamos a organizar tu tiempo para aprovechar esta oportunidad de formación.</p>
+      </aside>
+    </section>
+
+    <section class="tutorial container" id="tutorial" aria-labelledby="tutorial-title">
+      <div>
+        <p class="section-label">Tutorial</p>
+        <h2 id="tutorial-title">Guía para crear tu cuenta</h2>
+        <p>Este espacio queda listo para insertar el enlace, video o recurso oficial del proceso de registro.</p>
+      </div>
+      <div class="tutorial-box">
+        <span>▶</span>
+        <p>Agregar aquí el tutorial oficial</p>
       </div>
     </section>
 
-    <section class="section section--notice">
-      <div class="container narrow">
-        <div class="notice">
-          <h2>Información importante</h2>
-          <p><strong>Disclaimer pendiente:</strong> este texto debe ser reemplazado por la versión oficial. Puede
-            utilizarse para aclarar condiciones de preinscripción, disponibilidad de cupos, fechas, certificación,
-            acceso a plataforma, tratamiento de datos personales o cualquier otra información institucional necesaria.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="oferta">
+    <section class="courses section-pad" id="cursos" aria-labelledby="courses-title">
       <div class="container">
-        <div class="section__head">
+        <div class="section-head">
           <div>
-            <p class="section__label">Oferta formativa</p>
-            <h2>12 cursos virtuales disponibles</h2>
+            <p class="section-label">Catálogo de cursos</p>
+            <h2 id="courses-title">Oferta virtual disponible</h2>
+            <p>Explora la oferta de cursos virtuales y elige los que más se ajusten a tus intereses.</p>
           </div>
-          <p>Consulta la información general de cada curso. La inscripción se realizará desde el botón de
-            preinscripción.</p>
+          <span class="course-count">8 cursos</span>
         </div>
-        <div class="filters" aria-label="Filtros de cursos">
-          <button class="filter is-active" type="button" data-area="Todas">Todas las áreas</button>
-        </div>
-        <div class="cards-grid" id="coursesGrid" aria-live="polite"></div>
+        <div class="courses-grid" id="coursesGrid"></div>
       </div>
     </section>
 
-    <section class="section cta" id="preinscripcion">
-      <div class="container cta__box">
-        <p class="section__label">Preinscripción</p>
-        <h2>¿Te interesa participar?</h2>
-        <p>Completa el formulario de preinscripción. Por ahora el enlace es provisional y debe reemplazarse en
-          <code>js/app.js</code>.
-        </p>
-        <a class="btn btn--primary btn--large" id="preRegisterLink" href="#" target="_blank"
-          rel="noopener noreferrer">Preinscríbete aquí</a>
+    <section class="cta container" aria-labelledby="cta-title">
+      <div class="cta__icon">✦</div>
+      <div>
+        <h2 id="cta-title">¡Comienza tu proceso de formación ahora!</h2>
+        <p>Crea tu cuenta en la plataforma de la Universidad EAFIT y accede a nuestros cursos.</p>
       </div>
+      <a class="btn btn--light" href="https://formacion.eafit.edu.co/cursos/4" target="_blank" rel="noopener noreferrer">Crea tu cuenta aquí ↗</a>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer__grid">
-      <div>
-        <strong>Comunicación Pública de la Ciencia</strong>
-        <p>Micrositio de oferta formativa para docentes.</p>
-      </div>
-      <div class="logos" aria-label="Logos institucionales">
-        <div class="logo-placeholder">Logo 1</div>
-        <div class="logo-placeholder">Logo 2</div>
-        <div class="logo-placeholder">Logo 3</div>
-      </div>
+      <div class="footer-logo footer-logo--eafit">Universidad<br><strong>EAFIT</strong></div>
+      <div class="footer-logo">Secretaría de<br><strong>Educación</strong></div>
+      <div class="footer-logo footer-logo--bogota"><strong>Bogotá</strong></div>
     </div>
   </footer>
 
   <script src="js/courses.js"></script>
   <script src="js/app.js"></script>
 </body>
-
 </html>
