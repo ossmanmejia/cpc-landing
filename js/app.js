@@ -24,10 +24,9 @@ function createCourseCard(course) {
 
   article.innerHTML = `
     <div class="course-card__top">
-      <span class="course-card__index">${course.id}.</span>
       <span class="course-card__duration">${escapeHtml(course.duration)}</span>
     </div>
-    <h3>${escapeHtml(course.title)}</h3>
+    <h3><span class="course-card__index">${course.id}.</span> ${escapeHtml(course.title)}</h3>
     <p class="course-card__area">${escapeHtml(course.area)}</p>
     <div class="course-card__meta">
       <span>Nivel ${escapeHtml(course.level)}</span>
@@ -49,7 +48,7 @@ function renderCourses() {
 
 function openModal(course) {
   lastFocusedElement = document.activeElement;
-  modalTitle.textContent = course.title;
+  modalTitle.textContent = `${course.id}. ${course.title}`;
   modalArea.textContent = course.area || 'Curso virtual';
   modalMeta.innerHTML = `
     <span>Duración: ${escapeHtml(course.duration)}</span>
